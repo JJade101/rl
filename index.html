@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OFFLINE_THOUGHTS | Understanding Corruption</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <header class="nav" id="nav">
+      <a href="#home" class="brand" data-scroll>OFFLINE_THOUGHTS</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-scroll>HOME</a>
+        <a href="#video" data-scroll>VIDEO</a>
+        <a href="#about" data-scroll>ABOUT</a>
+      </nav>
+      <div class="status"><i class="dot"></i> DOCUMENTARY / ACTIVE</div>
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Toggle menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+
+    <main>
+      <!-- HOME / HERO -->
+      <section id="home" class="hero">
+        <div class="hero-text reveal">
+          <p class="label">DOCUMENTARY / 001</p>
+          <h2 class="site-name">OFFLINE_THOUGHTS</h2>
+          <h1>UNDERSTANDING<br /><em>CORRUPTION</em></h1>
+          <p class="intro">
+            An educational space that explores corruption, its effects on
+            society, and the importance of awareness, accountability, and
+            integrity.
+          </p>
+          <div class="btn-row">
+            <button class="btn primary" data-target="#video">
+              WATCH VIDEO
+            </button>
+            <button class="btn" data-target="#issue">LEARN MORE</button>
+          </div>
+        </div>
+
+        <!-- CSS-only symbolic visual (no images) -->
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="doc d3"></div>
+          <div class="doc d2">
+            <span class="ln"></span><span class="ln"></span
+            ><span class="ln short"></span>
+          </div>
+          <div class="doc d1">
+            <p class="label">FILE NO. 0417</p>
+            <div class="stamp">CASE</div>
+            <div class="data">
+              <span style="--w: 92%"></span><span style="--w: 70%"></span>
+              <span class="bad" style="--w: 84%"></span
+              ><span style="--w: 55%"></span>
+              <span class="bad" style="--w: 40%"></span>
+            </div>
+          </div>
+          <div class="scale">
+            <div class="post"></div>
+            <div class="beam">
+              <i class="crack"></i>
+              <div class="pan left"></div>
+              <div class="pan right"></div>
+            </div>
+            <div class="base"></div>
+          </div>
+          <div class="warn w1">!</div>
+          <div class="warn w2">?</div>
+          <div class="tag label"><i class="dot red"></i> UNDER REVIEW</div>
+        </div>
+      </section>
+
+      <!-- 01 / VIDEO -->
+      <section id="video" class="section">
+        <div class="wrap reveal">
+          <p class="label sec-label">01 / VIDEO</p>
+          <h2 class="title">THE COST OF CORRUPTION</h2>
+          <p class="sub">WATCH • UNDERSTAND • REFLECT</p>
+
+          <div class="player">
+            <div class="player-bar label">
+              <span>DOCUMENTARY FILE</span>
+              <span>STATUS: <b id="vStatus">READY</b></span>
+              <span class="hide-sm">FILE: corruption-video.mp4</span>
+            </div>
+            <div class="screen">
+              <!-- PUT YOUR VIDEO HERE: video/corruption-video.mp4
+               (create a folder named "video" next to index.html) -->
+              <video id="vid" controls preload="metadata" playsinline>
+                <source src="rl.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+              <div class="placeholder" id="placeholder">
+                <button class="big-play" id="bigPlay" aria-label="Play video">
+                  &#9654;
+                </button>
+                <p class="label">NO FILE LOADED</p>
+                <p>
+                  Place <code>corruption-video.mp4</code> inside the
+                  <code>video/</code> folder.
+                </p>
+              </div>
+            </div>
+          </div>
+          <p class="caption">
+            An educational presentation exploring what corruption is, how it can
+            affect communities and public institutions, and why accountability
+            and integrity are important.
+          </p>
+        </div>
+      </section>
+
+      <!-- 02 / ABOUT THE ISSUE -->
+      <section id="issue" class="section issue">
+        <div class="wrap">
+          <figure class="quote reveal">
+            <p class="label sec-label">02 / ABOUT THE ISSUE</p>
+            <blockquote>
+              <p>
+                A community is rarely broken by one great theft. It is broken by
+                every small silence that allowed it.
+              </p>
+            </blockquote>
+            <figcaption class="label">— OFFLINE_THOUGHTS</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- 03 / ABOUT -->
+      <section id="about" class="section">
+        <div class="wrap reveal">
+          <p class="label sec-label">03 / ABOUT</p>
+          <h2 class="title">ABOUT OFFLINE_THOUGHTS</h2>
+          <div class="about-grid">
+            <p class="lead">
+              OFFLINE_THOUGHTS is an educational website created to present
+              ideas and information about corruption through a simple digital
+              documentary experience.
+            </p>
+            <div class="creator">
+              <p class="label">CREATOR / PROFILE</p>
+              <div class="who">
+                <div class="avatar">RD</div>
+                <div>
+                  <h3>RL Domosmo</h3>
+                  <p class="course">Bachelor of Elementary Education (BEEd)</p>
+                </div>
+              </div>
+              <p>
+                Created as a student project focused on awareness, learning, and
+                reflection about corruption and its effects on society.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="wrap foot">
+        <div>
+          <p class="foot-name">OFFLINE_THOUGHTS</p>
+          <p class="label">CORRUPTION / AWARENESS / EDUCATION</p>
+        </div>
+        <div class="foot-r">
+          <p class="label"><i class="dot"></i> PROJECT ACTIVE</p>
+          <p class="who-foot">RL Domosmo | BEEd</p>
+          <p class="label">© 2026 OFFLINE_THOUGHTS</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
